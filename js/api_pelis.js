@@ -61,7 +61,7 @@ setTimeout(() => {
     }
     getMovies();
 
-}, 500)
+}, 1300)
 
 // DOM ELEMENTS
 const btnLike = $('.btn-heart');
