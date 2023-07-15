@@ -1,9 +1,6 @@
-// const $ = (nodo, thisDocument = document.body) => thisDocument.querySelector(nodo);
 const gridCarousels = document.querySelectorAll('.carousel__list');
 
 function main(){
-
-    // let acomulador = 1;
 
     gridCarousels.forEach( (carousel, index) => {
 

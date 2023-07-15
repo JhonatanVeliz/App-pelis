@@ -176,8 +176,30 @@ video{
     width: 100%;
     overflow-x: hidden;
 }
+.content-api-principal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content-sarch{
+    display: flex;
+    align-items: center;
+}
+.search-btn{
+    color: var(--color-white);
+    font-family: var(--font);
+    background-color: var(--color-vino);
+    border-radius: .5rem 0  0 .5rem;
+}
+.search-input{
+    padding: .7rem;
+    border: none;
+    border-radius: 0  .5rem .5rem 0;
+    font-family: var(--font);
+    outline: none;
+}
 .title{
-    padding: 2.5rem 0;
+    padding: 4rem 0;
     color: var(--color-white);
     font-family: var(--font);
     font-size: 3rem;
@@ -327,6 +349,17 @@ video{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+.modal-alerts{
+    padding: 2rem;
+}
+.btn-modal-alerts{
+    background-color: var(--color-vino);
+    color: var(--color-white);
+    font-family: var(--font);
+    font-size: 2rem;
+    display: block;
+    margin: 0 auto;
 }
 .btn-heart{
     font-size: 5rem;

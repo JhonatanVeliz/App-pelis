@@ -33,8 +33,8 @@
             <div class="nav__links" id="nav">
 
                 <a href="#peliculas" class="nav__link">Peliculas</a>
-                <a href="#" class="nav__link">Series</a>
-                <a href="#" class="nav__link">Mis Favoritas</a>
+                <a href="#series" class="nav__link">Series</a>
+                <a href="#favoritos" class="nav__link">Mis Favoritas</a>
 
                 <button class="perfil btn-perfil">
 
@@ -66,7 +66,8 @@
 
                     <div class="hero__btns">
                         <button class="btn hero__btn hero__btn--play" id="video-play">Play</button>
-                        <a href="https://www.primevideo.com/dp/amzn1.dv.gti.1cb68101-3a54-87f7-019f-f7ba48072069?autoplay=0&ref_=atv_cf_strg_wb" class="btn hero__btn hero__btn--info" target="_blank">Visitar</a>
+                        <a href="https://www.primevideo.com/dp/amzn1.dv.gti.1cb68101-3a54-87f7-019f-f7ba48072069?autoplay=0&ref_=atv_cf_strg_wb"
+                            class="btn hero__btn hero__btn--info" target="_blank">Visitar</a>
                     </div>
 
                 </div>
@@ -79,7 +80,15 @@
 
         <div class="content-api container">
 
-            <h2 class="title" id="peliculas">Las Mejores Películas</h2>
+            <div class="content-api-principal">
+                <h2 class="title" id="peliculas">Las Mejores Películas</h2>
+
+                <div class="content-sarch">
+                    <button type="button" class="btn search-btn" id="btn-search">Buscar</button>
+                    <input type="text" placeholder="Buscar película:" id="input-search" class="search-input"
+                        autocomplete="off">
+                </div>
+            </div>
 
             <div class="carousel">
 
@@ -95,6 +104,32 @@
 
 
                     <button class="btn carousel__btn carousel__btn--right" id="btn--right-1">
+                        <img src="./img/icon/Forward.png" alt="adelante">
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="content-api container">
+
+            <h2 class="title" id="series">Las Mejores Series</h2>
+
+            <div class="carousel">
+
+                <div class="carousel__container">
+
+                    <button class="btn carousel__btn carousel__btn--left" id="btn--left-2">
+                        <img src="./img/icon/Back.png" alt="atras">
+                    </button>
+
+                    <div class="carousel__list">
+
+                    </div>
+
+
+                    <button class="btn carousel__btn carousel__btn--right" id="btn--right-2">
                         <img src="./img/icon/Forward.png" alt="adelante">
                     </button>
                 </div>
@@ -141,19 +176,31 @@
 
         <div class="modal-info">
 
-            <button class="btn btn-clouse-movie-info" id="cerrar-modal-info"><i class="fa-solid fa-circle-xmark"></i></button>
+            <button class="btn btn-clouse-movie-info" id="cerrar-modal-info"><i
+                    class="fa-solid fa-circle-xmark"></i></button>
 
             <img src="./img/portada.jpg" alt="imagen poster de la pelicula" class="carousel__img img-movies">
 
             <div class="modal-overview">
                 <h3 class="title modal-title">Titulo</h3>
-                <p class="modal-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae minima facilis neque? Suscipit illum, delectus temporibus nam vitae necessitatibus ullam consectetur vero incidunt, quisquam sapiente in quis, itaque facilis ex!</p>
+                <p class="modal-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae minima facilis
+                    neque? Suscipit illum, delectus temporibus nam vitae necessitatibus ullam consectetur vero incidunt,
+                    quisquam sapiente in quis, itaque facilis ex!</p>
                 <button class="btn btn-heart"><i class="fa-solid fa-heart"></i></button>
             </div>
 
         </div>
 
     </section>
+
+    <div class="modal modal-alerts" id="modal-alerts">
+
+        <div id="modal-alerts">
+            <h3 class="title" id="modal-alerts-title">Titulo Error</h3>
+            <button class="btn btn-modal-alerts">Aceptar</button>
+        </div>
+
+    </div>
 
     <script async src="./js/glider.min.js"></script>
     <script type="module" src="./js/menu.js"></script>
